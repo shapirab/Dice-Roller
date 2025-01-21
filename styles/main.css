@@ -1,12 +1,36 @@
 @import '../styles/base.css';
 
-body{
+
+
+/* .container{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     justify-content: center;
     align-items: center;
+} */
+
+.container__header{
+    text-align: center;
+}
+
+.container__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.action{
+    
+}
+
+.players-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .dice--container{
@@ -76,4 +100,25 @@ body{
 .dot_num-5{
     grid-column: 2;
     grid-row: 2;
+}
+
+.btn{
+    font-size: 2rem;
+    letter-spacing: 0.8px;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn--primary{
+    background-color: rgb(236, 114, 14);
+    color: #fff;
+    box-shadow: 3px 3px 5px #ccc,
+    -3px -3px 5px #ccc;
+    transition: 0.3s;
+}
+.btn--primary:hover{
+    background-color: rgb(210, 101, 12);
+    box-shadow: 2px 2px 3px #aaa,
+    -2px -2px 3px #aaa;
 }
