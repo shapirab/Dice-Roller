@@ -13,12 +13,22 @@
         </div>
         <div class="container__body">
             <div class="players-container">
-                <div class="player">
+                <div class="player" id="player_1">
                     <h3 class="player__heading">Player 1</h3>
                     <div class="dice--container">
+                        <div class="dots--container dot-uneven">
+                            <div class="dot dot_num-5"></div>
+                        </div>
+                        <div class="dots--container dot-uneven">
+                            <div class="dot dot_num-2"></div>
+                            <div class="dot dot_num-3"></div>
+                        </div>
+                        <div class="dots--container dot-uneven">
+                            <div class="dot dot_num-2"></div>
+                            <div class="dot dot_num-5"></div>
+                            <div class="dot dot_num-3"></div>
+                        </div>
                         <div class="dots--container dot-even">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
                             <div class="dot"></div>
                             <div class="dot"></div>
                             <div class="dot"></div>
@@ -36,63 +46,53 @@
                             <div class="dot"></div>
                             <div class="dot"></div>
                             <div class="dot"></div>
-                        </div>
-                        <div class="dots--container dot-uneven active">
-                            <div class="dot dot_num-2"></div>
-                            <div class="dot dot_num-5"></div>
-                            <div class="dot dot_num-3"></div>
-                        </div>
-                        <div class="dots--container dot-uneven">
-                            <div class="dot dot_num-2"></div>
-                            <div class="dot dot_num-3"></div>
-                        </div>
-                        <div class="dots--container dot-uneven">
-                            <div class="dot dot_num-5"></div>
-                        </div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>                        
                     </div>
                 </div>
-                <div class="player">
+                <div class="player" id="player_2">
                     <h3 class="player__heading">Player 2</h3>
                     <div class="dice--container">
-                        <div class="dots--container dot-even">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
                         <div class="dots--container dot-uneven">
-                            <div class="dot dot_num-1"></div>
-                            <div class="dot dot_num-2"></div>
-                            <div class="dot dot_num-3"></div>
-                            <div class="dot dot_num-4"></div>
                             <div class="dot dot_num-5"></div>
                         </div>
-                        <div class="dots--container dot-even active">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
+                        <div class="dots--container dot-uneven">
+                            <div class="dot dot_num-2"></div>
+                            <div class="dot dot_num-3"></div>
                         </div>
                         <div class="dots--container dot-uneven ">
                             <div class="dot dot_num-2"></div>
                             <div class="dot dot_num-5"></div>
                             <div class="dot dot_num-3"></div>
                         </div>
+                        <div class="dots--container dot-even">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
                         <div class="dots--container dot-uneven">
+                            <div class="dot dot_num-1"></div>
                             <div class="dot dot_num-2"></div>
                             <div class="dot dot_num-3"></div>
-                        </div>
-                        <div class="dots--container dot-uneven">
+                            <div class="dot dot_num-4"></div>
                             <div class="dot dot_num-5"></div>
                         </div>
+                        <div class="dots--container dot-even">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>                      
                     </div>
                 </div>
             </div>
             <div class="action">
                 <button class="btn btn--primary">Roll The Dice</button>
-                <h3 class="action-results"><span>Player 1</span> Wins!</h3>
+                <h3 class="action-results"><span id="winner-name"></span></h3>
             </div>
         </div>
     </div>

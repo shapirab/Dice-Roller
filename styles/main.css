@@ -23,8 +23,12 @@
     align-items: center;
 }
 
-.action{
-    
+.action-results{
+    visibility:hidden;
+}
+
+.action-results.active{
+    visibility: visible;
 }
 
 .players-container{
@@ -108,6 +112,7 @@
     padding: 1rem 4rem;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .btn--primary{
